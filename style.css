@@ -1,0 +1,447 @@
+/*Corpo do site*/
+
+@keyframes bounce{
+    0%, 200%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+.botao {
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.botao{
+    background-color: #2081bc;
+
+}
+
+.botao:before{
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.botao:hover:before{
+    width: 100%;
+}
+
+/* Navegação do Menu principal */
+
+/* Título principal do site Wesley*/
+
+* {
+    margin: 0 auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+}
+
+nav{
+  list-style: none;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav > a {
+    display: inline-block;
+
+}
+
+nav ul {
+    max-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Menu sobre serviços fotos contato */
+nav ul li {
+    color: #FFF;
+    font-size: 17px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    display: inline;
+    transition: all .3s;
+ 
+}
+
+/* borda dos botões do menu do site */
+nav ul li a:hover {
+    color: rgb(242, 246, 248);
+    background-color: #2081bc;
+    border-width: 3px;
+    border-style:solid;
+    border-color:#afaab1;
+}
+
+/* Imagem técnico profissional em informática */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/manutencao02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFF;
+    text-align: center;
+    padding: 20px;
+
+}
+
+header h1 {
+    color: #FFFFFF;
+
+}
+
+header p {
+    margin-bottom: 2em;
+
+}
+
+#sobre {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 10px 10px 20px 20px;
+   background-color: #2081bc;
+   color: #FFFFFF;
+
+}
+
+#sobre h2 {
+    color: #FFFFFF;
+
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao { 
+    background-color: #68d0ec;
+    color: #FFFFFF;
+
+}
+
+/* Serviços prestados */
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+/* Fotos */
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#fotos div.zoom{
+    width: 620px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    background-color: #2081bc;
+    color: #e6ff00;
+    font-weight: bold;
+}
+
+#fotos h2 {
+    margin-bottom: 20px;
+
+}
+
+/* Borda das imagem das fotos */
+#fotos img {
+    border-radius: 0px;
+}
+
+/*Contato*/
+#contato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#contato h2 {
+    color: #000000;
+
+}
+
+
+#link_topo {
+    text-decoration: none;
+    color: #FFFF;
+    background-color: #2081bc;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
+    border-radius: 25%;
+    border-width: 2.1px;
+    border-style:solid;
+    border-color:#FFF;
+   
+}
+
+main {
+    font-size: 6px;
+    background-color: #2081bc;
+
+}
+
+.desenv {
+    color: white;
+
+}
+
+/* Rodapé */
+
+#footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #2081bc;
+    color: #FFFFFF;
+
+}
+
+#footer a {
+    text-decoration: none;
+    color: #00FFFF;
+    border: 20px
+}
+
+.dropShadow{
+    filter:drop-shadow(7px 7px 7px #2081bc);
+}
+
+#imagem{
+    width: 100px;
+    height: 200px;
+}
+    
+#texto {
+    margin-top: 20px;
+    color: #e6ff00;
+    left: 165px;
+    font-size: 20px;
+}
+
+.zoom{
+    overflow: hidden;
+
+}
+  
+.zoom img {
+    max-width: 100%;
+   -moz-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+  }
+  
+.zoom:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  
+}
+
+
+/* Cabeçalho */
+
+header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+}
+
+#sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+    
+}
+
+#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+#servicos h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#servicos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+
+}
+
+/* Imagens de nossos serviços de TI */
+#servicos img {
+    height: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #2081bc;
+}
+
+#img {
+   border-radius: 50px;
+}
+
+
+/* Contato */
+
+#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+/* Paragrafo do contato */
+
+#contato h2, #contato p {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /* Cabeçalho */
+    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+
+    }
+}
+
+/* Sobre */
+ 
+#sobre {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+
+}
+
+/* Serviços */
+
+#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+#servicos h2 {
+    text-align: center;
+    width: 100%;
+
+}
+
+#servicos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+
+}
+
+/* Fotos dos trabalhos realizado */
+
+#fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#fotos h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#fotos img {
+    width: 33.3333333%;
+
+}
+
